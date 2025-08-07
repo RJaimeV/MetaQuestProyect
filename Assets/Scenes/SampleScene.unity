@@ -2001,7 +2001,19 @@ MonoBehaviour:
   _shootButton: 268435456
   _onShoot:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1633239262}
+        m_TargetAssemblyTypeName: InstantiateObject, Assembly-CSharp
+        m_MethodName: Instantiate
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 979754134}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _bulletSpawnPoint: {fileID: 979754134}
 --- !u!1 &1475827349
 GameObject:
@@ -2067,6 +2079,51 @@ Transform:
   - {fileID: 1371854997}
   - {fileID: 1006482921}
   m_Father: {fileID: 1960735160}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1633239261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1633239263}
+  - component: {fileID: 1633239262}
+  m_Layer: 0
+  m_Name: InstantiateBullets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1633239262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633239261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec0a0d9ee6848f4babf4ca090356441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectToInstantiate: {fileID: 2184297437507569769, guid: 85f0eadea87a79e42be1f325d33b9988, type: 3}
+--- !u!4 &1633239263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633239261}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.11828, y: 0, z: -0.18695}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1882062924
 GameObject:
@@ -2254,3 +2311,4 @@ SceneRoots:
   - {fileID: 905838197}
   - {fileID: 27323729}
   - {fileID: 399944113}
+  - {fileID: 1633239263}
